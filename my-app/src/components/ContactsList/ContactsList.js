@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { BsBackspaceFill } from "react-icons/bs";
 import {
@@ -22,5 +23,9 @@ const ContactsList = ({ contacts, onDeleteItem }) => (
     ))}
   </ContactList>
 );
+ContactsList.propTypes = {
+  contacts: PropTypes.array,
+  onDeleteItem: PropTypes.func.isRequired,
+};
 
 export default ContactsList;

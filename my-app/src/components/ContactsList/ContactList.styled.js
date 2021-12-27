@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const ContactList = styled.ul``;
 export const ListItem = styled.li`
   display: flex;
@@ -12,6 +11,7 @@ export const Paragraph = styled.p`
   margin-left: 5px;
 `;
 export const ContactButton = styled.button`
+  display: inline-block;
   background-color: #e7e7e7;
   color: black;
   border: none;
@@ -19,6 +19,5 @@ export const ContactButton = styled.button`
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
 `;
